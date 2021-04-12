@@ -1,5 +1,8 @@
 def count(word):
+    word = word.lower()
     listi = {}
+    if word.isalnum() != True:
+        return ()
     for i in word:
         if i not in listi:
             listi[i]= word.count(i)

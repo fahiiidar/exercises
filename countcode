@@ -1,0 +1,6 @@
+def count(word):
+    listi = {}
+    for i in word:
+        if i not in listi:
+            listi[i]= word.count(i)
+    return listi

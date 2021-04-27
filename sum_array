@@ -7,13 +7,12 @@ def ret(nums, che):
             nums.remove(i)
             for i in nums:
                 if num + i == che:
-                    ls.append(num)
-                    ls.append(i)
+                    if num not in ls and i not in ls:
+                        ls.append(num)
+                        ls.append(i)
     return ls
     
 
 
 
-
-
-print(ret([3, 4, 3, 1], 6))
+print(ret([3, 4, 2, 3, 1], 5))
